@@ -1,7 +1,6 @@
 import hashlib
 
 def custom_hash(data: bytes) -> bytes:
-    # Используем SHA-256 из hashlib — он всегда даёт 32 байта
     sha256 = hashlib.sha256()
     sha256.update(data)
     return sha256.digest()
